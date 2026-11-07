@@ -364,7 +364,7 @@
 
   function renderWater(currentWater, goalWater) {
     waterText.textContent = `${currentWater.toLocaleString()} / ${goalWater.toLocaleString()} ml`;
-    
+
     // Each glass icon represents ~250 ml
     const totalGlasses = Math.max(8, Math.round(goalWater / 250));
     const filledCount = Math.floor(currentWater / 250);
